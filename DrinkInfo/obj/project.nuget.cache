@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7lPydgZFaYDstJ/Rb2OD0Kw5SpqCFHPsBqrtGQhGt/u81jHV+KOzmFK1dAHM3XZSPuLa6gSRjOrY8LZTqA1+1A==",
+  "dgSpecHash": "ve3RrlIyQdwreaklUjdEqBhPxeXepKWCKtLcxnTEs6oK0+x+UpmSaBSv71OLFlX8qA4aQ9ccPkpE0FqdZUm2sw==",
   "success": true,
   "projectFilePath": "E:\\Visual Studio\\DrinkInfo\\DrinkInfo\\DrinkInfo.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\maapa\\.nuget\\packages\\consoletableext\\3.2.0\\consoletableext.3.2.0.nupkg.sha512",
+    "C:\\Users\\maapa\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\maapa\\.nuget\\packages\\restsharp\\108.0.2\\restsharp.108.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
