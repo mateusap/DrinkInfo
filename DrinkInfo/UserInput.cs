@@ -27,6 +27,7 @@ namespace DrinkInfo
             GetDrinkInput(category);
         }
 
+
         private void GetDrinkInput(string category)
         {
             var drinks = drinkService.GetDrinkByCategory(category);
@@ -38,7 +39,7 @@ namespace DrinkInfo
                 Console.WriteLine("\nInvalid Drink");
                 drink = Console.ReadLine();
             }
-            if (!drinks.Any(x=> x.idDrink == drink))
+            if (!drinks.Any(x => x.idDrink == drink))
             {
                 Console.WriteLine("Drink doesn't exist.");
                 GetDrinkInput(category);

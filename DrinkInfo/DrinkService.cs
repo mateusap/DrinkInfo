@@ -24,8 +24,8 @@ namespace DrinkInfo
             {
                 string rawResponse = response.Result.Content;
                 var serialize = JsonConvert.DeserializeObject<Categories>(rawResponse);
-                List<Category> returnedList = serialize.CategoriesList;
-                TableVisualization.ShowTable(returnedList, "Categories Menu");
+                categories = serialize.CategoriesList;
+                TableVisualization.ShowTable(categories, "Categories Menu");
                 return categories;
             }
             return categories;
@@ -60,6 +60,8 @@ namespace DrinkInfo
                         });
                     }
                 }
+                TableVisualization.ShowTable(preplist, drinkDetail.strDrink);
+
             }
         }
         internal List<Drink> GetDrinkByCategory(string category)

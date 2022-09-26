@@ -11,6 +11,7 @@ namespace DrinkInfo.Models
     {
         public string strCategory { get; set; }
     }
+
     public class Categories
     {
         [JsonProperty("drinks")]
