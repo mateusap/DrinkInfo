@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DrinkInfo
 {
-    internal class TableVisualization
+    public class TableVisualization
     {
         public static void ShowTable<T>(List<T> tableData, [AllowNull] string tableName) where T: class
         {
@@ -20,7 +20,8 @@ namespace DrinkInfo
             ConsoleTableBuilder
                 .From(tableData)
                 .WithColumn(tableName)
-                .ExportAndWriteLine();
+                .WithFormat(ConsoleTableBuilderFormat.Alternative)
+                .ExportAndWriteLine(TableAligntment.Center);
             Console.WriteLine("\n\n");
         }
     }
